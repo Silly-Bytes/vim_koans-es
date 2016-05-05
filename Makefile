@@ -9,10 +9,10 @@
 
 FILE=entry
 
-all: $(FILE).pdf
+all: $(FILE).html
 
-$(FILE).pdf: $(FILE).md
+$(FILE).html: $(FILE).md
 	pandoc $< -o $@
 
 clean:
-	rm $(FILE).pdf
+	rm $(FILE).html
